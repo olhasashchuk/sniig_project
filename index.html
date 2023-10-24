@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+	<div class="wrapper">
+		<nav>
+			<div class="nav1">
+				<img class="logo", src="logo2.png" alt="logo"/>
+				<div class="nav1Body">
+					<input type ="text" name="" id="search" placeholder="Search">
+					<i id="loop" class="fa fa-search" aria-hidden="true"></i>
+				</div>
+				<div class="nav1Body">
+				 <a href="#popupCart" class="nav_cart popup-link"><i id="cart" class="fa fa-shopping-bag fa-2x" aria-hidden="true"></i></a> 
+				</div>
+				<div class="nav1Body">
+				 <p>EN</p>
+				</div>
+			</div>
+			<hr>
+			<div class="nav2">
+			 	<div class="nav2Body">
+					<p>menu</p>
+			  	</div>
+			  	<div class="nav2Body">
+					<p>about sniig</p>
+			  	</div>
+			  	<div class="nav2Body">
+					<p>delivery and payment</p>
+			  	</div>
+			  	<div class="nav2Body">
+					<p>contact us</p>
+			  	</div>
+			</div>
+		</nav>
+		<div class="mainFoto">
+			<img class="mainLogo", src="logo.png" alt="mainlogo"/>
+		</div>
+		<div class="filter">
+			<button class="filterButton" id="sort-asc">PRICE: LOW TO HIGH</button>
+			<button class="filterButton" id="sort-desc">PRICE: HIGH TO LOW</button>
+			<button class="filterButton" id="sort-rating">RATING</button>
+		</div>
+		<hr class="lineBody">
+		<div class="goods" id="product_container">
+			<div class="item" data-id="it0001" data-price = "10" data-rating = "3">
+				<img class="fotoItem" src="img/image1.png" alt="image1">
+				<h2 class="itemTitle">Crystal Epilators</h2>
+				<div class="countItems counter-wrapper">
+					<div class="items-control" data-action="minus">-</div>
+					<div class="items-current" data-count="">1</div>
+					<div class="items-control" data-action="plus">+</div>
+					<div class="price">10 USD</div>
+				</div> 
+				<button data-cart type="button" class="addToCart"><i class="fa fa-shopping-bag" aria-hidden="true"></i>  ADD TO CART</button>
+			</div>
+			<div class="item" data-id="it0002" data-price = "9" data-rating = "2">
+				<img class="fotoItem" src="img/image3.png" alt="image3">
+				<h2 class="itemTitle">Colorlamb Razor</h2>
+				<div class="countItems counter-wrapper">
+					<div class="items-control" data-action="minus">-</div>
+					<div class="items-current" data-count="">1</div>
+					<div class="items-control" data-action="plus">+</div>
+					<div class="price">9 USD</div>
+				</div>
+				<button data-cart type="button" class="addToCart"><i class="fa fa-shopping-bag" aria-hidden="true"></i>  ADD TO CART</button>
+			</div>
+			<div class="item" data-id="it0003" data-price = "8" data-rating = "4">
+				<img class="fotoItem" src="img/image5.png" alt="image5">
+				<h2 class="itemTitle">Bath Mousse</h2>
+				<div class="countItems counter-wrapper">
+					<div class="items-control" data-action="minus">-</div>
+					<div class="items-current" data-count="">1</div>
+					<div class="items-control" data-action="plus">+</div>
+					<div class="price">8 USD</div>
+				</div>
+				<button data-cart type="button" class="addToCart"><i class="fa fa-shopping-bag" aria-hidden="true"></i>  ADD TO CART</button>
+			</div>
+			<div class="item" data-id="it0004" data-price = "5" data-rating = "5">
+				<img class="fotoItem" src="img/image7.png" alt="image7">
+				<h2 class="itemTitle">Lucky Fine Dry Shampoo</h2>
+				<div class="countItems counter-wrapper">
+					<div class="items-control" data-action="minus">-</div>
+					<div class="items-current" data-count="">1</div>
+					<div class="items-control" data-action="plus">+</div>
+					<div class="price">5 USD</div>
+				</div>
+				<button data-cart type="button" class="addToCart"><i class="fa fa-shopping-bag" aria-hidden="true"></i>  ADD TO CART</button>
+			</div>
+			<div class="item" data-id="it0005" data-price = "15" data-rating = "1">
+				<img class="fotoItem" src="img/image9.png" alt="image9">
+				<h2 class="itemTitle">Razor Sniig</h2>
+				<div class="countItems counter-wrapper">
+					<div class="items-control" data-action="minus">-</div>
+					<div class="items-current" data-count="">1</div>
+					<div class="items-control" data-action="plus">+</div>
+					<div class="price">15 USD</div>
+				</div>
+				<button data-cart type="button" class="addToCart"><i data-cart class="fa fa-shopping-bag" aria-hidden="true"></i>  ADD TO CART</button>
+			</div>
+
+			<div id="popupCart" class="popupCart">
+				<div class="popup_bodyCart">
+					<div class="popup_contentCart">
+						<a href="" class="popup_close"><i class="fa fa-times" aria-hidden="true"></i></a>
+						<div class="popup_titleCart">SHOPPING CART</div>
+						<div class="popupCart-wrapper">
+						
+						</div>
+						<button data-delete type="button" class="removeBatton">Remove item</button>
+						<hr>
+						<div class="cart-total">
+							<p>
+								<span>Total:</span>
+								<span class="total-price">0</span>
+								<span>USD</span>
+							</p>
+						</div>
+						<a href="#body"><button class="styleBatton">CONTINUE SHOPPING</button></a>
+						<a href="#checkoutCart"><button class="styleBatton">CHECKOUT</button></a>
+					</div>
+				</div>
+			</div>
+			<div id="checkoutCart" class="checkoutCart">
+				<div class="checkoutCart_body">
+					<div class="checkoutCart_content">
+						<a href="" class="popup_close"><i class="fa fa-times" aria-hidden="true"></i></a>
+						<div class="checkoutCart_title">CONGRATULATION!</div>
+						<div class="checkoutCart-text">
+							<p>Your order was successful!</p>
+							<p>Your product will be delivered within 2-3 business days.</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		
+
+	
+			<footer>
+			<div class="footer1">
+				<div class="footerbody">
+					<ul>
+						<li class="textTitle">INFORMATION</li>
+						<li>About Sniig</li>
+						<li>Delivery and Payment</li>
+						<li>Privacy policy</li>
+					</ul>
+				</div>
+				<div class="footerbody">
+					<ul>
+						<li>CUSTOMER SERVICE</li>
+						<li>Contact US</li>
+						<li>Returns</li>
+						<li>Site Map</li>
+					</ul>
+				</div>
+				<div class="footerbody">
+					<ul>
+						<li>SOCIAL MEDIA</li>
+						<li><i class="fa fa-instagram" aria-hidden="true"></i><a href="https://www.instagram.com/sniig.in.ua/"> Instagram</a></li>
+						<li><i class="fa fa-music" aria-hidden="true"></i><a href="https://www.tiktok.com/@snig.in.ua?_t=8cI1MtBVeAX&_r=1"> Tic tok</a></li>
+						<li><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</i></li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<div class="footer2">
+				<div class="footerbody">100% Guarantee to sold goods</div>
+				<div class="footerbody">Shipping all over the world</div>
+				<div class="footerbody"><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2271004.184012724!2d11.5425!3d56.23008!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sdk!4v1679697796447!5m2!1sen!2sdk" width="120" height="120" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></li>
+			</div>
+	  </footer>
+
+
+
+
+	</div>
+	<script src="./js/script.js"></script>
+	<script src="./js/cart-01.js"></script>
+	<script src="./js/calcCartPrice.js"></script>
+</body>
+</html>
